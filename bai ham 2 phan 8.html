@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = prompt("số phần tử muốn nhập");
+    let mang = [];
+    let mang1 = [];
+    for (i = 0; i < num; i++) {
+        mang.push(prompt("nhập mảng số bất kỳ"));
+    }
+    let ham = chuyenDoi(mang);
+
+    function chuyenDoi(mang) {
+        for (i = 0; i < mang.length; i++) {
+            mang1.unshift(mang[i]);
+        }
+        return mang1
+    }
+    alert(ham)
+
+</script>
+</body>
+</html>

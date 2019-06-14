@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = parseInt(prompt("số thư nhất"));
+    let num2 = parseInt(prompt("số thư hai"));
+    let ham = dao2so(num1,num2);
+    function dao2so(num1,num2) {
+        let num3 = num2;
+        num2 = num1;
+        num1 = num3;
+        alert("số thứ nhất " + num1 + " số thứ 2 "+num2)
+    }
+</script>
+</body>
+</html>

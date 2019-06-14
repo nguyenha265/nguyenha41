@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>chu vi : <span id="chuvi"></span></p>
+<p>diện tich : <span id="dientich"></span></p>
+<script>
+    let numBer = parseInt(prompt("tính diện tích"));
+    let number = parseInt(prompt("tính chu vi"));
+    let dienTich = tinhDientich(numBer);
+    let chuVi = tinhChuVi(number);
+    function tinhDientich(numBer) {
+        let pi = 3.14;
+        tinh_dien_tich = (numBer*numBer)*pi;
+        document.getElementById("dientich").innerHTML = tinh_dien_tich
+    }
+    function tinhChuVi(number) {
+        let pi = 3.14;
+        tinh_chu_vi = (number*2)*pi;
+        document.getElementById("chuvi").innerHTML = tinh_chu_vi
+    }
+</script>
+</body>
+</html>

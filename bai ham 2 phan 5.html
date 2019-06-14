@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1 = parseInt(prompt("số thứ nhất"));
+    let num2 = parseInt(prompt("số thứ hai"));
+    let num3 = parseInt(prompt("số thứ ba"));
+    let ham = xet(num1, num2, num3);
+
+    function xet(num1, num2, num3) {
+        if (num1 > num2) {
+            return "số 1 lớn nhất"
+        } else if (num2 > num3) {
+            return "số thứ 2 lớn nhất";
+        } else {
+            return "số thứ 3 lớn nhất";
+        }
+    }
+    alert(ham)
+</script>
+</body>
+</html>
