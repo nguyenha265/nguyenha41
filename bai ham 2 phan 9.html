@@ -8,7 +8,6 @@
 <script>
     let num = prompt("số phần tử muốn nhập");
     let mang = [];
-    let mang1 = [];
     for (i = 0; i < num; i++) {
         mang.push(prompt("nhập ký tự bất kỳ"));
     }
@@ -20,13 +19,13 @@
             if(mang[i]===timKiem){
                 a =a+1;
             }
-            else {
-                alert(-1);
-                break
-            }
-        }return a
+        }
+        if(a==0){
+            return -1;
+        }
+        return a
     }
-    alert(a)
+    alert(ham)
 </script>
 </body>
 </html>
